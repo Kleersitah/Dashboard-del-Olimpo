@@ -85,7 +85,20 @@ decreaseBtn.addEventListener("click", () => {
     secretBtn.classList.remove("ready")
   }
 
+  if (progress < 100) {
+
+    body.classList.remove("god-zeus")
+    body.classList.remove("zeus-storm")
+
+    lightning.classList.remove("active")
+
+    hiddenImage.classList.remove("show")
+    hiddenImage.classList.add("hidden-image")
+
+  }
+
 })
+
 
 godButtons.forEach(btn => {
 
@@ -164,3 +177,4 @@ secretBtn.addEventListener("click", () => {
   }
 
 })
+
