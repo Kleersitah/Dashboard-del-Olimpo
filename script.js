@@ -85,7 +85,9 @@ decreaseBtn.addEventListener("click", () => {
     secretBtn.classList.remove("ready")
   }
 
-  if (progress < 100) {
+  if (progress < 100 && body.classList.contains("god-zeus")) {
+
+    greeting.innerText = "El trueno se desvanece… ⚡"
 
     body.classList.remove("god-zeus")
     body.classList.remove("zeus-storm")
@@ -98,6 +100,7 @@ decreaseBtn.addEventListener("click", () => {
   }
 
 })
+
 
 
 godButtons.forEach(btn => {
@@ -177,4 +180,5 @@ secretBtn.addEventListener("click", () => {
   }
 
 })
+
 
