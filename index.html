@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Consejo del Olimpo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+ 
+
+  <div class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-center">
+      <h1 id="greeting" class="display-3">Consejo Supremo del Olimpo</h1>
+      <div class="col-md-4 col-lg-2 justify-content-center mx-auto mb-4 hidden-image" >
+      <img src="zeus.jpg" class="god-img">
+    </div>
+      <p class="lead">Zeus gobierna. Atenea guía. Ares combate. Poseidón sacude. Hades observa.</p>
+    </div>
+  </div>
+
+  
+
+  <div class="container py-5">
+
+       <section class="card olympus-card p-4 mb-5 shadow-lg">
+      <h3>Declara tu Nombre ante los Dioses</h3>
+
+      <div class="d-flex gap-2 mt-3">
+        <input 
+          type="text" 
+          id="nameInput" 
+          class="form-control" 
+          placeholder="Nombre del guerrero">
+
+          <select id="classSelect" class="form-select mt-2">
+  <option value="">Selecciona tu clase</option>
+  <option value="Guerrero">Guerrero</option>
+  <option value="Oráculo">Oráculo</option>
+  <option value="Semidiós">Semidiós</option>
+  <option value="Titán">Titán</option>
+</select>
+
+        <button id="saveNameBtn" class="btn btn-gold">
+          Invocar
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-5">
+  <h2 class="text-center mb-4">Canalizar Poder Divino</h2>
+
+  <div class="row g-4 text-center justify-content-center">
+
+   
+
+    <div class="col-md-4 col-lg-2">
+      <img src="atenea.jpg" class="god-img">
+      <h5>Atenea 🦉</h5>
+      <button class="btn btn-god athena-btn mt-2" data-god="athena">Canalizar</button>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <img src="ares.jpg" class="god-img">
+      <h5>Ares 🗡</h5>
+      <button class="btn btn-god ares-btn mt-2" data-god="ares">Canalizar</button>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <img src="poseidon.jpg" class="god-img">
+      <h5>Poseidón 🌊</h5>
+      <button class="btn btn-god poseidon-btn mt-2" data-god="poseidon">Canalizar</button>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <img src="hades.jpg" class="god-img">
+      <h5>Hades 🔥</h5>
+      <button class="btn btn-god hades-btn mt-2" data-god="hades">Canalizar</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <section class="card olympus-card p-4 mb-5 shadow-lg">
+      <h3>Ascenso a la Divinidad</h3>
+
+      <div class="progress mt-3">
+        <div id="progressBar" class="progress-bar" style="width: 0%">
+          0%
+        </div>
+      </div>
+
+      <div class="d-flex gap-3 mt-4">
+        <button id="increaseBtn" class="btn btn-power">
+          Aumentar Poder
+        </button>
+        <button id="decreaseBtn" class="btn btn-blood">
+          Sacrificar Poder
+        </button>
+      </div>
+    </section>
+
+<div class="text-center mt-5">
+  <button id="secretBtn" class="btn btn-zeus btn-lg d-none">
+    Desatar el Rayo de Zeus ⚡
+  </button>
+</div>
+
+  </div>
+
+  <div id="lightning" class="lightning-strike"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

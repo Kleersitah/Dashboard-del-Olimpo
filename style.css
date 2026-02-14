@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(180deg, #f4efe6, #e6dccb);
+  color: #2b2b2b;
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+.hero-section {
+  position: relative;
+  height: 70vh;
+  background: url("background-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.olympus-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  border: 1px solid #d4af37;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, background 0.6s ease;
+}
+
+.olympus-card:hover {
+  transform: translateY(-5px);
+}
+
+.god-img {
+  width: 200px;
+  max-height: 250px;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.god-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+}
+
+h5 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn-gold {
+  background: linear-gradient(45deg, #d4af37, #ffd700);
+  border: none;
+  color: #1a1a1a;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-gold:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+}
+
+.btn-power {
+  background: linear-gradient(45deg, #4caf50, #8bc34a);
+  border: none;
+  color: #fff;
+}
+
+.btn-blood {
+  background: linear-gradient(45deg, #8b0000, #b22222);
+  border: none;
+  color: #fff;
+}
+
+.btn-divine {
+  background: linear-gradient(45deg, #ffd700, #fff4b3);
+  border: none;
+  color: #1a1a1a;
+  font-weight: bold;
+  padding: 12px 30px;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.btn-divine:hover {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 1);
+  transform: scale(1.08);
+}
+
+.progress {
+  height: 28px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.progress-bar {
+  font-weight: bold;
+  transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.dark-mode {
+  background: linear-gradient(180deg, #0f0f1a, #1a1a2e);
+  color: #f5f5f5;
+}
+
+.dark-mode .hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .olympus-card {
+  background: rgba(25, 25, 45, 0.9);
+  border: 1px solid #6c63ff;
+}
+
+.dark-mode .hero-content h1 {
+  text-shadow: 0 0 25px rgba(108, 99, 255, 1);
+}
+
+.dark-mode .btn-gold {
+  background: linear-gradient(45deg, #6c63ff, #8a7dff);
+  color: #fff;
+}
+
+.dark-mode .god-img:hover {
+  box-shadow: 0 0 25px rgba(108, 99, 255, 0.9);
+}
+
+
+.btn-god {
+  font-weight: bold;
+  border: none;
+  padding: 6px 12px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-god:hover {
+  transform: scale(1.08);
+}
+
+.zeus-btn { background: linear-gradient(45deg, #ffd700, #fff176); }
+.athena-btn { background: linear-gradient(45deg, #5c6bc0, #9fa8da); color: white; }
+.ares-btn { background: linear-gradient(45deg, #b71c1c, #ef5350); color: white; }
+.poseidon-btn { background: linear-gradient(45deg, #0277bd, #4fc3f7); color: white; }
+.hades-btn { background: linear-gradient(45deg, #4a148c, #7e57c2); color: white; }
+
+.btn-zeus {
+  background: linear-gradient(45deg, #ffd700, #ffffff);
+  color: #1a1a1a;
+  font-weight: bold;
+  padding: 14px 35px;
+  box-shadow: 0 0 0px transparent;
+  transition: all 0.4s ease;
+}
+
+.btn-zeus.ready {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 1);
+  transform: scale(1.1);
+}
+
+.lightning {
+  animation: flash 0.4s ease-in-out;
+  background: white !important;
+}
+
+@keyframes flash {
+  0% { background: white; }
+  100% { background: inherit; }
+}
+
+
+
+body.god-zeus {
+  background: linear-gradient(180deg, #fffde7, #ffe082);
+  color: #4e342e;
+}
+
+body.god-zeus .hero-overlay {
+  background: rgba(255, 215, 0, 0.3);
+}
+
+body.god-athena {
+  background: linear-gradient(180deg, #e8eaf6, #7986cb);
+  color: #1a237e;
+}
+
+body.god-athena .hero-overlay {
+  background: rgba(63, 81, 181, 0.4);
+}
+
+body.god-ares {
+  background: linear-gradient(180deg, #ffebee, #c62828);
+  color: #ffffff;
+}
+
+body.god-ares .hero-overlay {
+  background: rgba(139, 0, 0, 0.6);
+}
+
+body.god-poseidon {
+  background: linear-gradient(180deg, #e1f5fe, #0288d1);
+  color: #003c8f;
+}
+
+body.god-poseidon .hero-overlay {
+  background: rgba(0, 105, 148, 0.5);
+}
+
+body.god-hades {
+  background: linear-gradient(180deg, #ede7f6, #4a148c);
+  color: #f3e5f5;
+}
+
+body.god-hades .hero-overlay {
+  background: rgba(26, 0, 51, 0.7);
+}
+
+body[class*="god-"] .olympus-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+body.god-ares .olympus-card,
+body.god-hades .olympus-card {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.lightning-strike {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 6px;
+  height: 100vh;
+  background: linear-gradient(180deg, #ffffff, #ffd700, #ffffff);
+  transform: translateX(-50%);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lightning-strike.active {
+  animation: strike 0.5s ease-out forwards;
+}
+
+@keyframes strike {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scaleY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1);
+  }
+  40% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body.zeus-storm .hero-overlay {
+  background: rgba(0, 0, 0, 0.85);
+  transition: background 0.3s ease;
+}
+
+.hidden-image {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.hidden-image.show {
+  display: block;
+  opacity: 1;
+}
